@@ -13,7 +13,9 @@ just please do it lol!
 # FEATURES
 
 • Has Save and Load functions (stored in a text file) (DO NOT DELETE THE TEXT FILE)
+
 • IDK. More features coming soon.
+
 
 # I would LOVE to see your forks!
 
