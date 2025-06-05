@@ -2,6 +2,7 @@
 
 cls
 
+rem You can just comment the welcome screen out, if you want to skip to the main menu.
 echo Welcome to a videogame demo, made entirely with batch
 
 echo Thanks for checking it out!
@@ -18,11 +19,34 @@ if errorlevel 1 goto start
 
 :start
 echo Starting Game...
-echo Hold on... executing start.bat
+
+echo Deleting previous save...
+del 1.sav
+
+echo Writing to 1.sav
+
+echo Writing this to 1.sav...
+
+echo *area* >> 1.sav
+
+echo house  >> 1.sav
+
+echo *items* >> 1.sav
+
+echo none  >> 1.sav
+
+echo *health* >> 1.sav
+
+echo 100  >> 1.sav
+
+echo Finished Writing
+
+echo Hold on... executing NewGame.bat
 
 :load
-echo "Loading data from text file... (REMEMBER!!! IF YOU DELETE load.txt YOUR SAVE WILL BE DELETED!!!!)"
-echo This is a txt file test >> load.txt
+echo "Loading data from text file... (REMEMBER!!! IF YOU DELETE save.ini YOUR SAVE WILL BE DELETED!!!!)"
+
+FOR /F "tokens=* delims=" %%x in (1.sav) DO echo %%x
 goto RunGameWithLoad
 
 :exit
@@ -32,4 +56,4 @@ pause
 exit
 
 :RunGameWithLoad
-echo Running game with save
+echo Running game with your save
