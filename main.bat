@@ -44,7 +44,7 @@ echo Finished Writing
 echo Hold on... executing NewGame.bat
 
 :load
-echo "Loading data from text file... (REMEMBER!!! IF YOU DELETE save.ini YOUR SAVE WILL BE DELETED!!!!)"
+echo "Loading data from text file... (REMEMBER!!! IF YOU DELETE 1.sav YOUR SAVE WILL BE DELETED!!!!)"
 
 FOR /F "tokens=* delims=" %%x in (1.sav) DO echo %%x
 goto RunGameWithLoad
@@ -56,4 +56,4 @@ pause
 exit
 
 :RunGameWithLoad
-echo Running game with your save
+echo Running game with your save...
