@@ -22,9 +22,14 @@ echo Hold on... executing start.bat
 
 :load
 echo "Loading data from text file... (REMEMBER!!! IF YOU DELETE load.txt YOUR SAVE WILL BE DELETED!!!!)"
+echo This is a txt file test >> load.txt
+goto RunGameWithLoad
 
 :exit
 echo Quitting...
 echo Are you sure?
 pause
 exit
+
+:RunGameWithLoad
+echo Running game with save
