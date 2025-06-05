@@ -46,7 +46,14 @@ echo Hold on... executing NewGame.bat
 :load
 echo "Loading data from text file... (REMEMBER!!! IF YOU DELETE 1.sav YOUR SAVE WILL BE DELETED!!!!)"
 
-FOR /F "tokens=* delims=" %%x in (1.sav) DO echo %%x
+setlocal enabledelayedexpansion
+set i=0
+
+for /f "tokens=* delims=" %%x in (1.sav) do (
+    set /a i+=1
+    set "line!i!=%%x"
+)
+
 goto RunGameWithLoad
 
 :exit
@@ -57,3 +64,5 @@ exit
 
 :RunGameWithLoad
 echo Running game with your save...
+
+if 
