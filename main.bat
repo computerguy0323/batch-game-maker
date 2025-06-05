@@ -64,5 +64,11 @@ exit
 
 :RunGameWithLoad
 echo Running game with your save...
+goto GameRun
 
-if 
+:GameRun
+if "!line2!"=="home" (
+    echo Welcome Home!
+) else (
+    echo Not at home.
+)
