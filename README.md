@@ -1,5 +1,5 @@
-# batch-game-maker
-A simple batch game maker, made with batch, a text file, and a few other things.
+# Batch Game Maker
+A simple game maker, made with batch, a save file, and a few other things.
 
 ![License](https://img.shields.io/badge/license-MIT-blue) ![Last Commit](https://img.shields.io/github/last-commit/computerguy0323/batch-game-maker) ![Repo Size](https://img.shields.io/github/repo-size/computerguy0323/batch-game-maker)
 
